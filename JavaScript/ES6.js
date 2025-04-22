@@ -44,3 +44,15 @@ const allColos = ['back', 'blue', ...colos]
 const newColos = ['white', 'orange']
 allColos.push(...newColos)
 console.log(allColos)
+
+//Rest Parameter = เอา Array เข้าไปทำงานใน function โดยใช้ ... ในรูปแบบ parameter
+function summation(...number) { //มันจะเก็บค่าที่ส่งเข้ามาทุกตัวไว้ใน array ชื่อว่า number
+          let total = 0
+          for (let i = 0; i < number.length; i++) {
+                    total += number[i]              
+          }
+          return total
+}
+console.log(summation(50, 10))
+
+//
